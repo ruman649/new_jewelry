@@ -1,0 +1,455 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Lemon&display=swap'); 
+
+
+/* ========= start default  */
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color) !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 100%;
+    font-weight: 400;
+    font-family: var(--p-font);
+}
+
+.wrapper{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: var(--s-font);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+h2{
+    font-size: 1.5rem;
+    font-family: var(--p-font);
+    font-weight: 700px;
+    text-transform: capitalize;
+}
+p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+/* ========= end default  */
+
+
+/* ========= Variable declaraton  start */
+:root {
+    --primary-color: #C4E538;
+    --secondary-color: #52121d;
+    --white-color: #fff;
+    --black-color: #000;
+    --p-font: 'Josefin';
+    --s-font: 'Lemon';
+}
+
+/* ========= Variable declaraton end  */
+
+
+/* =========  custom srcoll bar   */
+::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: var(--primary-color);
+}
+
+/* ======== custom srcoll bar   */
+
+
+/* navigation start  */
+.navigation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--primary-color);
+}
+.navigation li a:hover{
+    color: var(--secondary-color) !important;
+}
+.navigation img{
+    width: 150px;
+    height: 50px;
+}
+.navigation ul li a{
+    font-size: 1.05rem;
+    font-weight: 700;
+    font-family: var(--p-font);
+}
+.navigation i:hover{
+    color: var(--secondary-color);
+}
+/* navigation end */
+
+
+/* hero section start  */
+
+.owl-theme .owl-nav {
+    position: absolute;
+    top: 50%;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.owl-theme .owl-nav span{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+/* hero section end  */
+
+
+
+/* scroll_on  */
+.scroll_on{
+    box-shadow: 1px 2px 6px 1px var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+/* agency start here  */
+#agency{
+    position: relative;
+}
+#agency svg{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    z-index: -1000;
+}
+
+#agency img{
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px 3px var(--primary-color);
+    z-index: 1000;
+    margin-top: 4rem;
+    transition: all 0.2s ease-in-out;
+}
+#agency img:hover{
+    box-shadow: 1px 2px 4px 3px var(--secondary-color);
+}
+
+
+
+/* about  */
+#about .owl-about .item{
+    /* padding: 2rem; */
+}
+#about .owl-about img{
+    border-radius: 10px;
+}
+#about .article h1{
+    color: var(--secondary-color);
+}
+#about .article span{
+    color: var(--primary-color);
+}
+#about .article p{
+    line-height: 1.2rem;
+    letter-spacing: 0.05rem;
+}
+
+#about .article .accordion h2 button{
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+#about .main-btn{
+    border: 1px solid var(--secondary-color) ;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    padding: 4px 15px;
+    font-weight: 200;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+#about .main-btn:hover{
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+}
+#about .second-btn{
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    text-transform: capitalize;
+    font-weight: 200;
+    border: 1px solid var(--primary-color) ;
+    color: var(--primary-color);
+    /* margin-left: 1rem; */
+    margin-top: 5px;
+    background-color: var(--secondary-color);
+}
+#about .second-btn:hover{
+    background-color: unset;
+}
+
+#about .second-section p{
+    line-height: 1.2rem;
+}
+#about .second-section h1{
+    color: #C4E538;
+}
+#about .second-section span{
+    color: var(--secondary-color);
+}
+
+
+/* new products section  */
+#new .new-top h2{
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: var(--s-font);
+    color: var(--primary-color);
+}
+#new .new-top p{
+    line-height: 1.1rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+
+}
+#new span{
+    color: var(--secondary-color);
+}
+
+.mixitup div{
+ /* width: 400px; */
+ height: 250px;
+
+}
+.mixitup div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mixitup-btn button{
+    background-color: var(--primary-color);
+    border: none;
+}
+.mixitup-btn button:hover{
+    background-color: var(--secondary-color) !important;
+}
+
+
+
+/* parallax section  */
+.parallex{
+    background: url('../asset/an-anket/hero.png') no-repeat center;
+    background-size: cover;
+    height: 200px;
+    background-attachment: fixed;
+}
+.parallex p{
+    font-size: 1.2rem;
+}
+.parallex h2, .parallex p{
+    line-height: 1.3rem;
+    color: var(--white-color);
+
+}
+.parallex .btn{
+    background-color: var(--secondary-color);
+    color: white;
+}
+.parallex .btn:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color) !important;
+}
+
+
+
+
+/* product  */
+#product h3{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#product h3 span{
+    color: var(--secondary-color);
+}
+#product h3 b{
+    color: var(--primary-color);
+}
+#product p{
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.navBar-tabs li button{ 
+    background-color: var(--secondary-color) !important;
+    margin: 1rem .6rem;
+    color: var(--white-color);
+}
+.navBar-tabs li button:active{
+    background-color: var(--primary-color) !important;
+}
+.navBar-tabs li button:active,
+.navBar-tabs li button:focus{
+    background-color: var(--primary-color) !important;
+} 
+
+
+#product .card .card-body{
+    line-height: 1rem;
+
+}
+#product .card .card-body{
+
+}
+#product .card .card-body .review{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+
+
+}
+#product .card .card-body .review p{
+    font-size: 0.8rem;
+    /* line-height: 0.9rem; */
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    padding: 5px;
+    color: var(--secondary-color);
+
+}
+#product .card img{
+    height: 220px;
+    object-fit: cover;
+}
+#product .card .card-body h5 a{
+    text-transform: capitalize;
+    padding-bottom: 0px;
+    color: var(--secondary-color);
+    font-weight: 600;
+
+}
+#product .card .card-body .bio {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+
+#product .card-body .buy-btn{
+    font-size: 0.9rem ;
+ background-color: var(--secondary-color);
+ color: var(--white-color);
+
+}
+#product .card-body .buy-btn:hover{
+    background-color:#912133;
+}
+#product .card-body .star i{ 
+    font-size: 0.8rem;
+    cursor: pointer;
+    color: rgb(255, 153, 36);
+}
+
+
+
+
+.box{
+    width: 80%;
+    margin-left: 10%;
+    height: 5px;
+    background-color: var(--primary-color);
+}
+
+
+
+
+
+
+
+/* testemonial  */
+#testemonial{
+    background-color: var(--secondary-color);
+}
+#testemonial .testemonial-text h4{
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.main_box{
+    width: 380px;
+}
+#testemonial .testemonial-text p{
+    line-height: 1.2rem;
+    color: white;
+}
+.owl-testimonial .item{
+    border-radius: 10px;
+   
+    background-color:#e63855;
+}
+.owl-testimonial .item img{ 
+    /* background-color:#912133; */
+    /* width: 200px; */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: 85px;
+    margin-top: 2rem;
+    border-radius: 50%;
+}
+
+.owl-testimonial .item .text-box{
+    padding: 1rem;
+    color: var(--white-color);
+    line-height: 1.2rem;
+}
+
+
+/* footer  */
+footer{
+    background-color: var(--primary-color);
+}
